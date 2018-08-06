@@ -4,7 +4,7 @@ Adalah module yang menangani template renderer. Secara default, module ini
 menyediakan renderer `.phtml`, untuk dukungan renderer lain, silahkan install
 juga module renderer yang tersedia.
 
-## instalasi
+## Instalasi
 
 Jalankan perintah di bawah di folder aplikasi:
 
@@ -12,7 +12,7 @@ Jalankan perintah di bawah di folder aplikasi:
 mim app install lib-view
 ```
 
-## penggunaan
+## Penggunaan
 
 Module `core` pada service `response` memiliki method `render` yang
 akan menggunakan module ini, contoh penggunaan pada kontroler:
@@ -31,7 +31,7 @@ di dalam template:
 
 ### asset(string $path, int $version=0): string
 
-## custom renderer
+## Custom Renderer
 
 Jika ingin membuatkan custom renderer, pastikan renderer mengimplementasikan
 interface `LibView\Iface\Renderer`.
