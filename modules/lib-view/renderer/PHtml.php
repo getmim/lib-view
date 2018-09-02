@@ -29,6 +29,10 @@ class PHtml implements \LibView\Iface\Renderer
         return $this->last_gate;
     }
 
+    public function __get($name){
+        return \Mim::$app->$name;
+    }
+
     public function asset(string $path, int $version=0, string $gate=null): string{
         $used_gate = $this->getUsedGate($gate);
         return \Mim::$app->router->asset($used_gate, $path, $version);
